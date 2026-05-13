@@ -1,0 +1,91 @@
+.Recognition_Sec {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}
+
+.Recognition_Sec :global(.subHeading) {
+    justify-content: center;
+}
+
+.heading {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.box {
+    background: var(--recognition-box-bg);
+    text-align: center;
+    border-radius: 11px;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    height: 100%;
+    padding: 30px 40px;
+    transition: all .3s;
+    display: flex;
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+}
+
+.iconWrapper {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.boxTitle {
+    font-weight: var(--font-600);
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+
+.boxDesc {
+    font-size: 15px;
+    color: var(--accent-color);
+    margin: 0;
+}
+
+/* Slider Overrides */
+.sliderWrapper {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .grid {
+        display: none;
+    }
+
+    .sliderWrapper {
+        display: block;
+        padding: 0 20px 40px;
+    }
+
+    .box {
+        max-width: 100%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 32px;
+    }
+}

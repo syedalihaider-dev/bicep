@@ -1,0 +1,130 @@
+.servicesSec {
+    padding: 40px 0 60px;
+    background-color: var(--light-color);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heading {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.desc {
+    color: var(--accent-color);
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.sliderContainer {
+    margin-top: 40px;
+    padding: 10px 0 20px;
+}
+
+.serviceBox {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 470px;
+    cursor: pointer;
+    transition: var(--cubic);
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transition: var(--cubic);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2));
+    z-index: 2;
+    transition: var(--cubic);
+}
+
+.content {
+    position: absolute;
+    bottom: -120px;
+    left: 30px;
+    right: 30px;
+    z-index: 3;
+    color: #fff;
+    transition: var(--cubic);
+}
+
+.serviceBox:hover .content{
+    bottom: 30px;
+}
+
+.iconWrapper {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.iconWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.boxTitle {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
+    transition: var(--cubic);
+}
+
+.boxDesc {
+    font-size: 14px;
+    overflow: hidden;
+    transition: var(--cubic);
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.readMore {
+    margin-top: 20px;
+    transform: translateY(10px);
+    transition: var(--cubic);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: var(--font-500);
+    color: var(--primary-color);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: fit-content;
+    padding: 8px 20px;
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.readMore img {
+    width: 14px;
+    height: 14px;
+}
+
+.servicesSec :global(.combo_btn){
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .serviceBox {
+        height: 400px;
+    }
+}

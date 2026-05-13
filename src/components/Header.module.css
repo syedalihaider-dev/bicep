@@ -1,0 +1,46 @@
+/* Header Styles */
+.header {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 0 0 22px 22px;
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 3px 25.5px 0 rgba(0, 0, 0, 0.10);
+    backdrop-filter: blur(31.5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header :global(.navbar-collapse) {
+    margin-right: 50px;
+}
+
+.nav_link {
+    color: var(--light-color) !important;
+    font-weight: 400;
+    margin: 0 25px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav_link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav_link:hover::after,
+.nav_link.active::after {
+    width: 100%;
+}
+
+.nav_link:hover {
+    color: var(--primary-color) !important;
+    text-decoration: none !important;
+}
