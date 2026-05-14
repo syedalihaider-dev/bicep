@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import BootstrapClient from "@/components/BootstrapClient";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const astaSans = Asta_Sans({
   subsets: ["latin"],
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         <BootstrapClient />
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

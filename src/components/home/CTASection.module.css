@@ -1,0 +1,172 @@
+.ctaSection {
+    background-color: var(--bg-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.ctaContent {
+    color: var(--light-color);
+}
+
+.title {
+    color: var(--light-color);
+    margin-bottom: 20px;
+}
+
+.description {
+    color: var(--light-color);
+    opacity: 0.8;
+    margin-bottom: 40px;
+    max-width: 90%;
+    font-size: 16px;
+}
+
+.btnGroup {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.contactInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.callIconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    position: relative;
+}
+
+.callIcon {
+    animation: ring 2s infinite;
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0);
+    }
+
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-10deg);
+    }
+
+    30% {
+        transform: rotate(5deg);
+    }
+
+    40% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.phoneNumber {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--light-color);
+}
+
+.imageWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phoneImage {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    z-index: 2;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.callingAnimationOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.ripple {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    animation: rippleEffect 3s linear infinite;
+    opacity: 0;
+}
+
+.ripple:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.ripple:nth-child(3) {
+    animation-delay: 2s;
+}
+
+@keyframes rippleEffect {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 991px) {
+    .imageWrapper {
+        margin-top: 50px;
+    }
+
+    .btnGroup {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
