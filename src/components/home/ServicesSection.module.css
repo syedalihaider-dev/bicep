@@ -34,9 +34,6 @@
 }
 
 .bgImage {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -65,7 +62,7 @@
     transition: var(--cubic);
 }
 
-.serviceBox:hover .content{
+.serviceBox:hover .content {
     bottom: 30px;
 }
 
@@ -73,7 +70,7 @@
     width: 40px;
     height: 40px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .iconWrapper img {
@@ -90,6 +87,7 @@
 }
 
 .boxDesc {
+    height: 65px;
     font-size: 14px;
     overflow: hidden;
     transition: var(--cubic);
@@ -119,12 +117,42 @@
     height: 14px;
 }
 
-.servicesSec :global(.combo_btn){
+.servicesSec :global(.combo_btn) {
     justify-content: center;
 }
 
-@media (max-width: 768px) {
-    .serviceBox {
-        height: 400px;
+@media screen and (max-width:1600px) {
+    
+}
+
+@media screen and (max-width:1399px) {
+
+    .heading {
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (max-width:1199px) {
+
+    .heading {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    .servicesSec {
+        padding: 40px 0;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+}
+
+@media screen and (max-width:575px) {
+    .heading {
+        font-size: 25px;
     }
 }

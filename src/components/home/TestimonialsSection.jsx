@@ -66,6 +66,12 @@ const TestimonialsSection = () => {
                     breakpoints={{
                         992: {
                             slidesPerView: 4,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                        },
+                        480: {
+                            slidesPerView: 2,
                         }
                     }}
                 >

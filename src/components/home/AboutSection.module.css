@@ -1,5 +1,5 @@
 .aboutSec {
-    padding: 20px 0 60px;
+    padding: 60px 0;
     background-color: var(--light-color);
 }
 
@@ -31,19 +31,53 @@
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
 }
 
-@media (max-width: 991px) {
-    .aboutSec {
-        padding: 60px 0;
+@media screen and (max-width:1600px) {
+
+}
+
+@media screen and (max-width:1399px) {
+
+    .heading {
+        font-size: 35px;
     }
-    .content {
-        padding-right: 0;
-        margin-bottom: 50px;
+
+}
+
+@media screen and (max-width:1199px) {
+
+    .aboutSec {
+        padding: 40px 0;
+    }
+
+    .heading {
+        font-size: 30px;
+
+    }
+
+}
+
+@media screen and (max-width:991px) {
+
+}
+
+@media screen and (max-width:767px) {
+
+    .heading {
         text-align: center;
     }
-    .desc {
-        margin: 0 auto 30px;
+
+    .desc{
+        text-align: center;
     }
-    .heading {
-        font-size: 36px;
+
+    .content {
+        padding-right: unset;
+    }
+
+}
+
+@media screen and (max-width:575px) {
+    .heading{
+        font-size: 25px;
     }
 }

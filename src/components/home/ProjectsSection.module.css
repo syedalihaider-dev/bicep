@@ -81,12 +81,55 @@
     margin: 0;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width:1600px) {
+    .subHeading {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:1399px) {
+
     .projectsSec {
         padding: 60px 0;
     }
 
     .heading {
-        font-size: 32px;
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .title {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:991px) {
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .sliderContainer {
+        padding: 0;
+    }
+
+    .projectsSec {
+        padding: 40px 0;
+    }
+}
+
+@media screen and (max-width:767px) {}
+
+@media screen and (max-width:575px) {
+
+    .heading{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .projectCard {
+        margin: 0 20px;
     }
 }

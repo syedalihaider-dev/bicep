@@ -77,7 +77,7 @@ const ServicesSection = () => {
                                             />
                                         </div>
                                         <h3 className={styles.boxTitle}>{service.title}</h3>
-                                        <p className={styles.boxDesc}>{service.desc}</p>
+                                        <p className={`${styles.boxDesc} scroll_block`}>{service.desc}</p>
                                         <div className={styles.readMore}>
                                             Read More
                                             <Image

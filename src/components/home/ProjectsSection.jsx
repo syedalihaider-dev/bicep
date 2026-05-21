@@ -55,7 +55,13 @@ const ProjectsSection = () => {
                         },
                         768: {
                             slidesPerView: 2,
-                        }
+                        },
+                        480: {
+                            slidesPerView: 2,
+                        },
+                        320: {
+                            slidesPerView: 1,
+                        },
                     }}
                 >
                     {projects.map((project, index) => (
