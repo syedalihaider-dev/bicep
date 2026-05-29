@@ -1,0 +1,147 @@
+.missionSec {
+    padding: 80px 0;
+    background-color: var(--light-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    padding-right: 20px;
+}
+
+.heading {
+    color: var(--secondary-color);
+    margin-bottom: 25px;
+}
+
+.desc {
+    font-size: 16px;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+}
+
+.countersRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.counterItem {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+    padding-right: 10px;
+    position: relative;
+}
+
+.counterItem:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 15%;
+    height: 70%;
+    width: 1px;
+    background-color: rgba(14, 37, 68, 0.15);
+}
+
+.counterNumber {
+    font-size: 30px;
+    font-weight: var(--font-800);
+    color: var(--secondary-color);
+    line-height: 1;
+    margin-bottom: 8px;
+    font-family: var(--font-base), sans-serif;
+    letter-spacing: -0.5px;
+}
+
+.counterLabel {
+    font-size: 14px;
+    color: var(--secondary-color);
+    margin: 0;
+    font-weight: var(--font-500);
+}
+
+.imageWrapper {
+    width: 378px;
+    margin: 0 auto;
+}
+
+.logoImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: floatLogo 6s ease-in-out infinite;
+}
+
+@keyframes floatLogo {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .missionSec {
+        padding: 80px 0;
+    }
+    
+    .counterNumber {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .missionSec {
+        padding: 60px 0;
+    }
+
+    .content {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    .countersRow {
+        justify-content: center;
+        gap: 30px 20px;
+    }
+
+    .counterItem {
+        flex: unset;
+        width: calc(50% - 15px);
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .counterItem:not(:last-child)::after {
+        display: none;
+    }
+
+    .imageWrapper {
+        margin-top: 50px;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .counterItem {
+        width: 100%;
+    }
+    
+    .heading {
+        line-height: 1.3;
+    }
+}

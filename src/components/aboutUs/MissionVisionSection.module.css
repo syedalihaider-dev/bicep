@@ -1,0 +1,177 @@
+.missionVisionSec {
+    padding: 80px 0;
+    background-color: var(--bg-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.heading {
+    color: var(--light-color);
+    margin-top: 15px;
+}
+
+.mainContainer {
+    display: flex;
+    background-color: #12213D;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.leftContent {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightContent {
+    flex: 1;
+    position: relative;
+    min-height: 100%;
+}
+
+.rightImage {
+    object-fit: cover;
+    object-position: center;
+}
+
+.desktopCards {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.desktopCards .card:first-child {
+    border-bottom: 2px solid #0e1b32;
+}
+
+.iconWrapper {
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cardSubtitle {
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.cardTitle {
+    color: var(--light-color);
+    font-size: 30px;
+    font-weight: var(--font-600);
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+.cardDesc {
+    color: rgba(255, 255, 255, 0.548);
+    font-size: 19px;
+    line-height: 35px;
+    font-weight: var(--font-300);
+    margin: 0;
+}
+
+.mobileSlider {
+    display: none;
+}
+
+/* Customizing Swiper Pagination for dark theme */
+.mobileSlider :global(.swiper-pagination) {
+    position: relative;
+    margin-top: 30px;
+}
+
+.mobileSlider :global(.swiper-pagination-bullet) {
+    background: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+}
+
+.mobileSlider :global(.swiper-pagination-bullet-active) {
+    background: var(--primary-color);
+    width: 20px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1199px) {
+    .missionVisionSec {
+        padding: 80px 0;
+    }
+    .leftContent {
+        padding: 40px;
+    }
+    .cardTitle {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .mainContainer {
+        flex-direction: column-reverse;
+    }
+    
+    .rightContent {
+        width: 100%;
+        height: 350px;
+        min-height: unset;
+    }
+    
+    .leftContent {
+        padding: 50px 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .missionVisionSec {
+        padding: 60px 0;
+    }
+    
+    .rightContent {
+        height: 250px;
+    }
+    
+    .desktopCards {
+        display: none;
+    }
+    
+    .mobileSlider {
+        display: block;
+    }
+    
+    .leftContent {
+        padding: 40px 25px;
+    }
+    
+    .cardTitle {
+        font-size: 20px;
+    }
+    
+    .cardDesc {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,99 @@
+.aboutBanner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 240px 0 160px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.bannerImage {
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    text-align: center;
+    color: var(--light-color);
+    position: relative;
+    z-index: 2;
+}
+
+.heading {
+    font-weight: var(--font-600);
+    margin-bottom: 20px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.description {
+    max-width: 780px;
+    margin: 0 auto 35px auto;
+    color: var(--light-color);
+    font-weight: var(--font-300);
+    font-size: 17px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btnGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.ctaBtn {
+    box-shadow: 0 8px 25px rgba(231, 107, 43, 0.4);
+}
+
+.phoneLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--light-color);
+    text-decoration: none !important;
+    font-size: 18px;
+    font-weight: var(--font-600);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.phoneIcon {
+    stroke: var(--light-color);
+    transition: transform 0.3s ease;
+}
+
+.phoneLink:hover {
+    color: var(--primary-color) !important;
+    transform: translateY(-3px);
+}
+
+.phoneLink:hover .phoneIcon {
+    transform: rotate(15deg) scale(1.1);
+    stroke: var(--primary-color);
+}
+
+.phoneNumber {
+    font-family: var(--font-base), sans-serif;
+    letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 767px) {
+    .aboutBanner {
+        min-height: 55vh;
+        padding: 140px 0 80px 0;
+    }
+    
+    .btnGroup {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .phoneLink {
+        width: 100%;
+        max-width: 220px;
+        justify-content: center;
+    }
+}

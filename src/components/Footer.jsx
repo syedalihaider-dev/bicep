@@ -12,7 +12,7 @@ const Footer = () => {
                         <h4 className={styles.widgetTitle}>Quick Links</h4>
                         <ul className={styles.widgetList}>
                             <li><Link href="/">Home</Link></li>
-                            <li><Link href="/">About Us</Link></li>
+                            <li><Link href="/about-us">About Us</Link></li>
                             <li><Link href="/">Our Services</Link></li>
                             <li><Link href="/">Industries</Link></li>
                             <li><Link href="/">Portfolio</Link></li>
