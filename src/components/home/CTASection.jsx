@@ -8,7 +8,7 @@ const CTASection = () => {
         <section className={`${styles.ctaSection} sec_padding`}>
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-lg-6">
+                    <div className="col-sm-12 col-md-6 col-lg-6">
                         <div className={styles.ctaContent}>
                             <div className="subHeading">
                                 <span className="dot"></span> BicepTech
@@ -33,7 +33,7 @@ const CTASection = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-sm-12 col-md-6 col-lg-6">
                         <div className={styles.imageWrapper}>
                             <div className={styles.callingAnimationOverlay}>
                                 <div className={styles.ripple}></div>

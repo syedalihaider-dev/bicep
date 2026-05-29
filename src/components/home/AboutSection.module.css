@@ -31,39 +31,25 @@
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
 }
 
-@media screen and (max-width:1600px) {
-
-}
-
 @media screen and (max-width:1399px) {
-
-    .heading {
-        font-size: 35px;
-    }
-
 }
 
 @media screen and (max-width:1199px) {
-
     .aboutSec {
         padding: 40px 0;
     }
-
-    .heading {
-        font-size: 30px;
-
-    }
-
 }
 
 @media screen and (max-width:991px) {
-
+    .imageWrapper{
+        margin-top: 25px;
+    }
 }
 
 @media screen and (max-width:767px) {
-
     .heading {
         text-align: center;
+        margin-bottom: 10px;
     }
 
     .desc{
@@ -74,10 +60,9 @@
         padding-right: unset;
     }
 
-}
-
-@media screen and (max-width:575px) {
-    .heading{
-        font-size: 25px;
+    .content :global(.combo_btn){
+        justify-content: center;
     }
 }
+
+@media screen and (max-width:575px) {}

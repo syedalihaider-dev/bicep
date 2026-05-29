@@ -84,18 +84,29 @@
     color: #ADB5BD;
 }
 
+.inputGroup textarea {
+    border-radius: 10px;
+}
+
 .contactForm button {
-    margin-top: 10px;
     padding: 14px 40px;
     font-size: 16px;
     border-radius: 8px;
 }
 
-@media screen and (max-width:1600px) {}
+@media screen and (max-width:1600px) {
+    .bgHalfDark {
+        height: 271px;
+    }
+}
 
 @media screen and (max-width:1399px) {
+    .bgHalfDark {
+        height: 240px;
+    }
+
     .imageWrapper {
-        width: 430px;
+        width: 433px;
     }
 
     .inputGroup {
@@ -107,10 +118,13 @@
         padding: 10px 20px;
         font-size: 14px;
     }
-
 }
 
 @media screen and (max-width:1199px) {
+    .bgHalfDark {
+        height: 205px;
+    }
+
     .imageWrapper {
         width: 360px;
     }
@@ -119,65 +133,40 @@
         margin-bottom: 15px;
     }
 
-    .inputGroup input,
-    .inputGroup textarea {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-
     .inputGroup textarea {
         height: 80px;
         border-radius: 15px;
     }
 
-    .ContactSection-module__PWIbWW__contactForm button {
-        margin-top: 0px;
+    .contactForm button {
         padding: 10px 20px;
         font-size: 14px;
     }
 }
 
 @media screen and (max-width:991px) {
-    .heading {
-        font-size: 30px;
+    .bgHalfDark {
+        height: 220px;
     }
 
     .formContainer {
         border-radius: 14px;
-        padding: 40px 30px;
+        padding: 30px;
         box-shadow: 0 15px 40px #00000024;
     }
 
     .imageWrapper {
         display: none;
     }
-
-    .inputGroup {
-        margin-bottom: 15px;
-    }
-
-    .inputGroup input,
-    .inputGroup textarea {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-
-    .inputGroup textarea {
-        height: 80px;
-        border-radius: 15px;
-    }
-
-    .ContactSection-module__PWIbWW__contactForm button {
-        margin-top: 0px;
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-
 }
 
 @media screen and (max-width:767px) {
+    .bgHalfDark {
+        height: 260px;
+    }
+
     .formContainer {
-        padding: 35px 30px;
+        padding: 30px;
     }
 }
 

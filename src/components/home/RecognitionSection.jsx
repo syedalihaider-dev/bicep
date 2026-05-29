@@ -90,7 +90,7 @@ const RecognitionSection = () => {
                                             alt={item.title}
                                         />
                                     </div>
-                                    <h3 className={styles.boxTitle}>{item.title}</h3>
+                                    <h5 className={styles.boxTitle}>{item.title}</h5>
                                     <p className={styles.boxDesc}>{item.desc}</p>
                                 </div>
                             </SwiperSlide>

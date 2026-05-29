@@ -59,7 +59,7 @@ const TestimonialsSection = () => {
                 </div>
             </div>
 
-            <div className={styles.sliderContainer}>
+            <div className="container">
                 <Swiper
                     spaceBetween={25}
                     slidesPerView={1}
@@ -68,10 +68,13 @@ const TestimonialsSection = () => {
                             slidesPerView: 4,
                         },
                         768: {
+                            slidesPerView: 3,
+                        },
+                        420: {
                             slidesPerView: 2,
                         },
-                        480: {
-                            slidesPerView: 2,
+                        320: {
+                            slidesPerView: 1,
                         }
                     }}
                 >

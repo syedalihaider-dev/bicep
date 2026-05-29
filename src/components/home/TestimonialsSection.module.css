@@ -9,16 +9,9 @@
 }
 
 .heading {
-    font-size: 48px;
     font-weight: 700;
     color: #1a2a47;
     margin-top: 15px;
-}
-
-.sliderContainer {
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 15px;
 }
 
 .testimonialCard {
@@ -88,7 +81,6 @@
 
 .playIcon {
     margin-left: 5px;
-    /* Adjust if icon is slightly off center */
 }
 
 @keyframes pulse {
@@ -105,7 +97,6 @@
     }
 }
 
-/* Video Modal Styles */
 .videoModal {
     position: fixed;
     top: 0;
@@ -168,53 +159,58 @@
     }
 }
 
-
-@media screen and (max-width:1600px) {
-    .heading {
-        font-size: 50px;
-    }
-
-}
-
 @media screen and (max-width:1399px) {
-
-    .heading {
-        font-size: 35px;
-    }
-
     .testimonialsSec {
         Padding: 60px 0;
     }
-    
+
+    .header {
+        margin-bottom: 25px;
+    }
+
+    .testimonialCard {
+        height: 350px;
+    }
 }
 
 @media screen and (max-width:1199px) {
-    .subHeading {
-        font-size: 16px;
-    }
-
-}
-
-@media screen and (max-width:991px) {
-
-    .subHeading {
-        font-size: 16px;
-    }
-
-    .heading {
-        font-size: 30px;
-    }
-
     .testimonialsSec {
         Padding: 40px 0;
     }
+
+    .subHeading {
+        font-size: 16px;
+    }
+
+    .testimonialCard {
+        height: 280px;
+    }
+
+    .overlay {
+        padding: 20px;
+    }
 }
 
-@media screen and (max-width:767px) {}
+@media screen and (max-width:991px) {
+    .testimonialCard {
+        height: 280px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .testimonialCard {
+        height: 300px;
+    }
+}
 
 @media screen and (max-width:575px) {
+    .testimonialCard {
+        height: 250px;
+    }
+}
 
-    .heading {
-        font-size: 25px;
+@media screen and (max-width:419px) {
+    .testimonialCard {
+        height: 400px;
     }
 }

@@ -91,7 +91,12 @@
     }
 }
 
-@media screen and (max-width:991px) {}
+@media screen and (max-width:991px) {
+    .header :global(.navbar-collapse) {
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+}
 
 @media screen and (max-width:767px) {}
 

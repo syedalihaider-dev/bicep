@@ -86,22 +86,11 @@
 }
 
 @media screen and (max-width:767px) {
-    .overlay {
-        background: linear-gradient(96deg, #0e1b32 20%, #0e1b3200 100%);
-    }
-
-    .content {
-        margin-top: 0px;
-    }
 }
 
 @media screen and (max-width:575px) {
     .overlay {
         background: #0e1b329c;
-    }
-
-    .content {
-        margin-top: 0px;
     }
 
     .subHeading {

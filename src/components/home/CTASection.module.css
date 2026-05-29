@@ -159,75 +159,85 @@
     }
 }
 
-@media screen and (max-width:1600px) {}
-
 @media screen and (max-width:1399px) {
-
     .ctaSection {
         padding: 60px 0;
     }
 
-    .title {
-        font-size: 35px;
+    .phoneImage {
+        max-width: 43%;
     }
 
+    .ripple {
+        width: 250px;
+        height: 250px;
+    }
 }
 
-@media screen and (max-width:1199px) {}
+@media screen and (max-width:1199px) {
+    .ctaSection {
+        padding: 40px 0;
+    }
+
+    .ripple {
+        width: 200px;
+        height: 200px;
+    }
+}
 
 @media screen and (max-width:991px) {
-
-    .title {
-        font-size: 30px;
+    .phoneImage {
+        max-width: 40%;
     }
 
-    .btnGroup {
-        margin-bottom: 20px;
+    .ripple {
+        width: 180px;
+        height: 180px;
     }
-
 }
 
 @media screen and (max-width:767px) {
-
     .title {
         text-align: center;
     }
 
     .description {
-        margin: 0 auto 40px auto ;
+        margin: 0 auto 20px auto;
         text-align: center;
     }
-
-    .title {}
 
     .btnGroup {
         margin-bottom: 40px;
         justify-content: center;
     }
 
+    .phoneImage {
+        max-width: 30%;
+    }
+
+    .ripple {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 @media screen and (max-width:575px) {
-    .title{
-        font-size: 25px;
-    }
-
-    .description{
+    .description {
         font-size: 14px;
         opacity: 1;
         max-width: 100%;
     }
 
-    .btnGroup{
+    .btnGroup {
         flex-wrap: wrap;
     }
 
-    .phoneImage{
+    .phoneImage {
         max-width: 50%;
     }
 
-    .ripple{
-        width: 180px;
-        height: 180px;
+    .ripple {
+        width: 100px;
+        height: 100px;
     }
 }
