@@ -80,11 +80,53 @@
     0% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-10px);
     }
+
     100% {
         transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    .missionSec {
+        padding: 60px 0;
+    }
+
+    .content {
+        padding-right: 0px;
+    }
+
+    .heading {
+        margin-bottom: 15px;
+    }
+
+    .desc {
+        margin-bottom: 0px;
+    }
+
+    .countersRow {
+        gap: 0px;
+        margin-top: 25px;
+    }
+
+    .counterItem {
+        min-width: 129px;
+        padding-right: 0px;
+    }
+
+    .counterNumber {
+        font-size: 25px;
+    }
+
+    .counterLabel {
+        font-size: 13px;
+    }
+
+    .imageWrapper {
+        width: 310px;
     }
 }
 
@@ -92,7 +134,7 @@
     .missionSec {
         padding: 80px 0;
     }
-    
+
     .counterNumber {
         font-size: 32px;
     }
@@ -140,7 +182,7 @@
     .counterItem {
         width: 100%;
     }
-    
+
     .heading {
         line-height: 1.3;
     }

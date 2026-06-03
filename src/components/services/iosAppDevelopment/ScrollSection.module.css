@@ -1,0 +1,92 @@
+.scrollSection {
+    height: 100vh;
+    background: #ffffff;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    max-width: 543px;
+    height: auto;
+}
+
+.mobileImage {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.rightContentWrapper {
+    position: relative;
+    overflow: visible;
+    padding-top: 25vh;
+}
+
+.rightContent {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 20vh;
+}
+
+.contentBox {
+    opacity: 1;
+}
+
+.orangeLine {
+    width: 40px;
+    height: 3px;
+    background: var(--primary-color, #e85d04);
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.description {
+    font-size: 18px;
+    color: #6b7280;
+    line-height: 1.6;
+    font-weight: 300;
+    max-width: 90%;
+}
+
+@media screen and (max-width: 1199px) {
+    .title {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .scrollSection {
+        height: auto;
+        overflow: visible;
+        padding: 80px 0;
+    }
+    
+    .rightContentWrapper {
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
+    
+    .rightContent {
+        gap: 50px;
+        padding-bottom: 0;
+    }
+    
+    .title {
+        font-size: 28px;
+    }
+    
+    .description {
+        font-size: 16px;
+    }
+}

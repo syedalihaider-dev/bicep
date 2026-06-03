@@ -56,6 +56,71 @@
     text-decoration: none !important;
 }
 
+.dropdown {
+    position: relative;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 150%;
+    left: 0;
+    width: max-content;
+    background: rgba(15, 15, 20, 0.95);
+    border-radius: 12px;
+    padding: 15px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: 1000;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+}
+
+.dropdown:hover .dropdownMenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    top: 100%;
+}
+
+.dropdownItem {
+    display: block;
+    padding: 10px 25px;
+    color: var(--light-color);
+    text-decoration: none !important;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.dropdownItem::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: var(--primary-color);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+    transform-origin: bottom;
+}
+
+.dropdownItem:hover {
+    color: var(--primary-color) !important;
+    background: rgba(255, 255, 255, 0.03);
+    padding-left: 32px;
+}
+
+.dropdownItem:hover::before {
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
 @media screen and (max-width:1600px) {
     .header :global(.navbar-collapse) {
         margin-right: 30px;

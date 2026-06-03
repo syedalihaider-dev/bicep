@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import CustomButton from '../CustomButton';
+import CustomButton from '@/components/CustomButton';
 import styles from './BannerSection.module.css';
 
 const BannerSection = () => {
@@ -9,7 +8,7 @@ const BannerSection = () => {
         <section className={styles.aboutBanner}>
             <Image
                 src="/banner.png"
-                alt="Banner Background Image"
+                alt="iOS App Development Background"
                 fill
                 className={styles.bannerImage}
             />
@@ -18,16 +17,16 @@ const BannerSection = () => {
                     <div className="col-lg-10">
                         <div className={styles.content}>
                             <h1 className={styles.heading}>
-                                About BicepTech
+                                High Performance iOS Apps Built for Growth
                             </h1>
                             <p className={styles.description}>
-                                BicepTech designs and develops high-performance iOS and Android apps for startups and growing companies — focused on speed, usability, and long-term scalability.
+                                BicepTech Designs And Develops High-Performance IOS And Android Apps For Startups And Growing Companies — Focused On Speed, Usability, And Long-Term Scalability.
                             </p>
                             <div className={styles.btnGroup}>
                                 <CustomButton className={styles.ctaBtn}>
                                     Free Consultation
                                 </CustomButton>
-                                <a href="tel:123456789" className={styles.phoneLink}>
+                                <a href="tel:123-456-789" className={styles.phoneLink}>
                                     <svg
                                         width="22"
                                         height="22"
