@@ -4,6 +4,7 @@ import "./globals.css";
 import BootstrapClient from "@/components/BootstrapClient";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import GlobalAnimations from "@/components/animations/GlobalAnimations";
 
 const astaSans = Asta_Sans({
   subsets: ["latin"],
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={astaSans.variable}>
       <body>
         <BootstrapClient />
+        <GlobalAnimations />
         <Header />
         {children}
         <Footer />

@@ -4,6 +4,12 @@ import ScrollSection from "@/components/services/iosAppDevelopment/ScrollSection
 import NativeExperienceSection from "@/components/services/iosAppDevelopment/NativeExperienceSection";
 import ServicesInMotionSection from "@/components/services/iosAppDevelopment/ServicesInMotionSection";
 import ProcessSection from "@/components/services/iosAppDevelopment/ProcessSection";
+import TechnologiesSection from "@/components/services/iosAppDevelopment/TechnologiesSection";
+import ProjectsSection from "@/components/home/ProjectsSection";
+import FocusSection from "@/components/services/iosAppDevelopment/FocusSection";
+import CTASection from "@/components/home/CTASection";
+import FaqSection from "@/components/home/FaqSection";
+import ContactSection from "@/components/home/ContactSection";
 
 export const metadata = {
     title: "iOS App Development | BicepTech",
@@ -18,6 +24,12 @@ export default function IosAppDevelopmentPage() {
             <NativeExperienceSection />
             <ServicesInMotionSection />
             <ProcessSection />
+            <TechnologiesSection />
+            <ProjectsSection />
+            <FocusSection />
+            <CTASection />
+            <FaqSection />
+            <ContactSection />
         </div>
     );
 }

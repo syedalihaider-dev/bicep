@@ -1,0 +1,70 @@
+.focusSection {
+    background-color: #ffffff;
+    padding: 100px 0;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainImage {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.contentWrapper {
+    max-width: 600px;
+    margin-left: auto;
+}
+
+.subHeading {
+    color: var(--primary-color, #e85d04);
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary-color, #e85d04);
+    border-radius: 50%;
+}
+
+.heading {
+    color: var(--secondary-color, #111827);
+    margin-bottom: 25px;
+}
+
+.description {
+    font-size: 16px;
+    color: #6b7280;
+    margin-bottom: 40px;
+}
+
+.knowMoreBtn {
+    box-shadow: 0 8px 25px rgba(231, 107, 43, 0.3);
+}
+
+@media screen and (max-width: 991px) {
+    .focusSection {
+        padding: 60px 0;
+    }
+    
+    .contentWrapper {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+    
+    .heading {
+        font-size: 32px;
+    }
+}
