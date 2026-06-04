@@ -33,7 +33,7 @@ const Header = () => {
                                 <Link href="/about-us" className={styles.nav_link}>About Us</Link>
                             </li>
                             <li className={`nav-item ${styles.dropdown}`}>
-                                <Link href="/services" className={styles.nav_link}>Services</Link>
+                                <Link href="#" className={styles.nav_link}>Services</Link>
                                 <div className={styles.dropdownMenu}>
                                     <Link href="/services/mobile-app-development" className={styles.dropdownItem}>Mobile App Development</Link>
                                     <Link href="/services/android-app-development" className={styles.dropdownItem}>Android App Development</Link>
@@ -44,7 +44,10 @@ const Header = () => {
                                 </div>
                             </li>
                             <li className="nav-item">
-                                <Link href="/case-studies" className={styles.nav_link}>Case Studies</Link>
+                                <Link href="/industries" className={styles.nav_link}>Industries</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link href="/pricing" className={styles.nav_link}>Pricing</Link>
                             </li>
                             <li className="nav-item">
                                 <Link href="/contact" className={styles.nav_link}>Contact Us</Link>
