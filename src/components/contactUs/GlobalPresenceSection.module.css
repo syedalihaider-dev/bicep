@@ -1,0 +1,119 @@
+.globalPresenceSec {
+    padding: 40px 0 80px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.heading {
+    color: var(--secondary-color);
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.locationCard {
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+    color: #ffffff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.imageOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    z-index: 1;
+}
+
+.cityTitle {
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    z-index: 2;
+    letter-spacing: 1px;
+}
+
+.cardDetails {
+    padding: 20px 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.infoRow {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.iconBox {
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.infoContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoLabel {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+
+.infoValue {
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+/* Themes */
+.orangeTheme {
+    background-color: var(--primary-color);
+}
+
+.blueTheme {
+    background-color: #172031; /* A dark blue based on the image */
+}
+
+@media (max-width: 991px) {
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .gridContainer {
+        grid-template-columns: 1fr;
+    }
+    .heading {
+        font-size: 32px;
+    }
+}
