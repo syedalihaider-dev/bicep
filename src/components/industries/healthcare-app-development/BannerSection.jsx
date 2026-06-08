@@ -17,10 +17,10 @@ const BannerSection = () => {
                     <div className="col-lg-10">
                         <div className={styles.content}>
                             <h1 className={styles.heading}>
-                                High Performance iOS Apps Built for Growth
+                                Healthcare App Development Company
                             </h1>
                             <p className={styles.description}>
-                                BicepTech Designs And Develops High-Performance IOS And Android Apps For Startups And Growing Companies — Focused On Speed, Usability, And Long-Term Scalability.
+                                Transform healthcare with Bicep’s secure, user-friendly app solutions tailored to your needs. From mHealth apps to AI-powered digital health platforms, we build custom solutions that enhance patient care and streamline medical operations.
                             </p>
                             <div className={styles.btnGroup}>
                                 <CustomButton className={styles.ctaBtn}>

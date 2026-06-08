@@ -10,35 +10,35 @@ const processData = [
         title: "01. Strategy",
         description: "Discovery, research, and roadmap planning",
         icon: "/services/ios-app-development/process-icon-01.png",
-        image: "/about-us-img.png"
+        image: "/services/strategy.png"
     },
     {
         id: 2,
         title: "02. Design",
         description: "UI/UX design, prototyping, and user testing",
         icon: "/services/ios-app-development/process-icon-02.png",
-        image: "/project-creative-agency.png"
+        image: "/services/design.png"
     },
     {
         id: 3,
         title: "03. Development",
         description: "Swift development with modern architecture",
         icon: "/services/ios-app-development/process-icon-03.png",
-        image: "/project-financial.png"
+        image: "/services/development.png"
     },
     {
         id: 4,
         title: "04. Testing",
         description: "QA, performance optimization, bug fixes",
         icon: "/services/ios-app-development/process-icon-04.png",
-        image: "/project-health.png"
+        image: "/services/testing.png"
     },
     {
         id: 5,
         title: "05. Launch",
         description: "App Store submission and marketing support",
         icon: "/services/ios-app-development/process-icon-05.png",
-        image: "/project-quiz.png"
+        image: "/services/launch.png"
     }
 ];
 

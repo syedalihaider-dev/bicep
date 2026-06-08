@@ -43,8 +43,11 @@ const Header = () => {
                                     <Link href="/services/blockchain-game-development" className={styles.dropdownItem}>Blockchain Game Development</Link>
                                 </div>
                             </li>
-                            <li className="nav-item">
-                                <Link href="/industries" className={styles.nav_link}>Industries</Link>
+                            <li className={`nav-item ${styles.dropdown}`}>
+                                <Link href="#" className={styles.nav_link}>Industries</Link>
+                                <div className={styles.dropdownMenu}>
+                                    <Link href="/industries/healthcare-app-development" className={styles.dropdownItem}>Healthcare App Development</Link>
+                                </div>
                             </li>
                             <li className="nav-item">
                                 <Link href="/pricing" className={styles.nav_link}>Pricing</Link>
