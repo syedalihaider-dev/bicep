@@ -1,0 +1,139 @@
+.ctaSection {
+    padding: 80px 0;
+    background-color: #ffffff;
+    overflow: visible;
+}
+
+.ctaCard {
+    border-radius: 32px;
+    position: relative;
+    padding: 69px 0 70px 50px;
+    box-shadow: 0 15px 35px rgba(241, 130, 71, 0.2);
+}
+
+.bgPatternImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contentLeft {
+    position: relative;
+    z-index: 3;
+}
+
+.mainHeading {
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.description {
+    color: #ffffff;
+    margin-bottom: 35px;
+}
+
+.btnGroup {
+    display: flex;
+}
+
+.blackCtaBtn {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border: none !important;
+    padding: 14px 32px !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+    transition: transform 0.2s ease, background-color 0.2s ease !important;
+}
+
+.blackCtaBtn:hover {
+    background-color: #1a1a1a !important;
+    transform: translateY(-2px);
+}
+
+.imageWrapper {
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+    z-index: 2;
+    width: 389px;
+    height: 436px;
+}
+
+.rightImg {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 1199px) {
+    .mainHeading {
+        font-size: 38px;
+    }
+
+    .ctaCard {
+        padding: 50px;
+    }
+
+    .imageWrapper {
+        width: 330px;
+        height: 370px;
+        bottom: -50px;
+    }
+}
+
+@media (max-width: 991px) {
+    .ctaSection {
+        padding: 50px 0;
+    }
+
+    .ctaCard {
+        padding: 40px 30px;
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .contentLeft {
+        text-align: center;
+    }
+
+    .mainHeading {
+        font-size: 32px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .description {
+        margin: 0 auto 30px;
+    }
+
+    .btnGroup {
+        justify-content: center;
+    }
+
+    .imageWrapper {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin-top: 40px;
+        width: 100%;
+        max-width: 340px;
+        height: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .mainHeading {
+        font-size: 26px;
+    }
+
+    .ctaCard {
+        border-radius: 20px;
+        padding: 35px 20px;
+    }
+}

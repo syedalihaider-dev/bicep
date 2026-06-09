@@ -1,0 +1,265 @@
+.sliderSection {
+    height: 680px;
+  background-color: #053E41;
+  position: relative;
+  overflow: hidden;
+}
+
+.sliderSection:hover :global(.swiper) {
+    transform: translateX(-20px);
+}
+
+.constantBgCircleWrapper {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.spinningCircle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px dashed rgba(255, 255, 255, 0.08);
+  background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
+  animation: spinInfinite 45s linear infinite, pulseSubtle 4s ease-in-out infinite alternate;
+}
+
+@keyframes spinInfinite {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulseSubtle {
+  0% { transform: scale(0.96); opacity: 0.7; }
+  100% { transform: scale(1.03); opacity: 1; }
+}
+
+.swiperContainer {
+  position: relative;
+  z-index: 2;
+}
+
+.imageFrameWrapper {
+  position: relative;
+  z-index: 3;
+}
+
+.contentBlock {
+    padding: 117px 0;
+}
+
+.slideTitle {
+  font-size: 56px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.slideDesc {
+  font-size: 16px;
+  height: 80px;
+  color: #d1e2e2;
+  margin-bottom: 40px;
+}
+
+.statsContainer {
+  background-color: #005A5E; 
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.statBox {
+  text-align: center;
+  position: relative;
+  flex: 1;
+}
+
+.statBox:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 15%;
+  height: 70%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.statNumber {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.statLabel {
+  font-size: 13px;
+  color: #a3c2c2;
+  margin-top: 4px;
+  text-transform: capitalize;
+}
+
+.availabilityRow {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.availText {
+  font-size: 16px;
+  color: #b3d1d1;
+}
+
+.linkWrapper {
+  margin-bottom: 20px;
+}
+
+.caseStudyLink {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 4px;
+  transition: opacity 0.2s ease;
+}
+
+.caseStudyLink:hover {
+  text-decoration: none;
+}
+
+.arrowUpRight {
+    filter: brightness(111);
+    transform: rotate(135deg);
+}
+
+.caseStudyLink:hover .arrowUpRight {
+  filter: unset;
+}
+.controlsRowWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+  margin-top: -100px;
+  position: relative;
+  z-index: 10;
+  max-width: 540px;
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+.fractionPagination {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.activeNum {
+  min-width: 12px;
+}
+
+.progressBarBg {
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progressBarFill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.totalNum {
+  color: #a3c2c2;
+}
+
+.navButtons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.navBtn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.prevBtn img {
+  filter: invert(56%) sepia(87%) saturate(1633%) hue-rotate(345deg) brightness(95%) contrast(88%);
+}
+
+.nextBtn {
+  background-color: #ffffff;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transform: rotate(180deg) !important;
+}
+
+.nextBtn img {
+  filter: invert(56%) sepia(87%) saturate(1633%) hue-rotate(345deg) brightness(95%) contrast(88%);
+}
+
+@media (max-width: 991px) {
+  .sliderSection {
+    padding: 70px 0;
+  }
+  .contentBlock {
+    padding-left: 0;
+    text-align: center;
+  }
+  .slideTitle {
+    font-size: 38px;
+  }
+  .slideDesc, .statsContainer, .controlsRowWrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .availabilityRow {
+    justify-content: center;
+  }
+  .controlsRowWrapper {
+    justify-content: center;
+    margin-top: 40px;
+    padding-right: 0;
+  }
+  .constantBgCircleWrapper {
+    left: 50%;
+    width: 500px;
+    height: 500px;
+  }
+}
