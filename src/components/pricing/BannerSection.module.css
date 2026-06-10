@@ -137,4 +137,8 @@
     .aboutBanner {
         padding: 130px 0 40px;
     }
+
+    .heading br {
+        display: none;
+    }
 }

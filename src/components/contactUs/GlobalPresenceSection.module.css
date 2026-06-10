@@ -42,7 +42,7 @@
     left: 0;
     width: 100%;
     height: 50%;
-    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
     z-index: 1;
 }
 
@@ -94,26 +94,97 @@
     font-weight: 300;
 }
 
-/* Themes */
 .orangeTheme {
     background-color: var(--primary-color);
 }
 
 .blueTheme {
-    background-color: #172031; /* A dark blue based on the image */
+    background-color: #172031;
+}
+
+@media (max-width: 1399px) {
+    .globalPresenceSec {
+        padding: 40px 0 60px;
+    }
+
+    .header {
+        margin-bottom: 30px;
+    }
+
+    .gridContainer {
+        gap: 25px;
+    }
+
+    .imageWrapper {
+        height: 250px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .globalPresenceSec {
+        padding: 40px 0;
+    }
+
+    .gridContainer {
+        gap: 15px;
+    }
+
+    .imageWrapper {
+        height: 210px;
+    }
+
+    .cardDetails {
+        gap: 15px;
+        padding: 20px 10px;
+    }
 }
 
 @media (max-width: 991px) {
     .gridContainer {
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .locationCard {
+        width: 48%;
     }
 }
 
 @media (max-width: 767px) {
-    .gridContainer {
-        grid-template-columns: 1fr;
+    .locationCard {
+        width: 48%;
     }
-    .heading {
-        font-size: 32px;
+
+    .imageWrapper {
+        height: 170px;
+    }
+
+    .cardDetails {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .cityTitle {
+        font-size: 25px;
+    }
+
+    .infoRow {
+        gap: 10px;
+    }
+
+    .infoLabel {
+        font-size: 14px;
+    }
+
+    .infoValue {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 575px) {
+    .locationCard {
+        width: 100%;
     }
 }

@@ -66,34 +66,61 @@
     margin: 0;
 }
 
-/* Orange Theme */
 .orangeTheme {
     background-color: #FFE8DB;
     border: 1px solid #E76B2B;
 }
 
-/* Blue Theme */
 .blueTheme {
     background-color: #D6E6FF;
     border: 1px solid #67A2FF;
 }
 
-@media (max-width: 991px) {
-    .heading {
-        font-size: 35px;
+@media (max-width: 1600px) {
+    .header {
+        margin-bottom: 30px;
     }
 }
 
-@media (max-width: 767px) {
-    .heading {
-        font-size: 28px;
+@media (max-width: 1399px) {
+    .contactInfoSec {
+        padding: 60px 0 20px;
     }
+}
+
+@media (max-width: 1199px) {
+    .contactInfoSec {
+        padding: 40px 0 20px;
+    }
+
+    .iconCircle {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+    }
+
+    .cardTitle {
+        font-size: 14px;
+    }
+
+    .cardValue {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+
     .cardsWrapper {
-        flex-direction: column;
-        align-items: center;
+        gap: 15px;
     }
+
+    .iconCircle {
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+    }
+
     .pillCard {
-        width: 100%;
-        max-width: 320px;
+        padding: 5px 20px 5px 5px;
     }
 }

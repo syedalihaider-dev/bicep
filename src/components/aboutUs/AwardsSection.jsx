@@ -4,9 +4,7 @@ import Image from 'next/image';
 import styles from './AwardsSection.module.css';
 
 const AwardsSection = () => {
-    // Array of award images 1 to 9
     const awards = Array.from({ length: 9 }, (_, i) => `/awards/award-0${i + 1}.png`);
-    // Duplicate for continuous marquee effect
     const marqueeItems = [...awards, ...awards];
 
     return (

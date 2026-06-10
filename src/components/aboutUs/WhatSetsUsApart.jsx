@@ -90,10 +90,11 @@ const WhatSetsUsApart = () => {
                         autoplay={{
                             delay: 3000,
                             disableOnInteraction: false,
+                            pauseOnMouseEnter: true
                         }}
                         breakpoints={{
                             480: {
-                                slidesPerView: 1.2,
+                                slidesPerView: 1,
                             },
                             575: {
                                 slidesPerView: 1.5,

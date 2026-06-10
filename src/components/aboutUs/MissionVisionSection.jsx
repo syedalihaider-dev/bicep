@@ -35,9 +35,7 @@ const MissionVisionSection = () => {
                 </div>
 
                 <div className={styles.mainContainer}>
-                    {/* Left Side: Cards */}
                     <div className={styles.leftContent}>
-                        {/* Desktop View */}
                         <div className={styles.desktopCards}>
                             {data.map((item, index) => (
                                 <div key={index} className={styles.card}>
@@ -57,7 +55,6 @@ const MissionVisionSection = () => {
                             ))}
                         </div>
 
-                        {/* Mobile View Slider */}
                         <div className={styles.mobileSlider}>
                             <Swiper
                                 modules={[Autoplay, Pagination]}
@@ -92,7 +89,6 @@ const MissionVisionSection = () => {
                         </div>
                     </div>
 
-                    {/* Right Side: Image */}
                     <div className={styles.rightContent}>
                         <Image
                             src="/about-us/our-mission-right-img.png"

@@ -41,9 +41,9 @@ const CTASection = () => {
                                 <div className={styles.ripple}></div>
                             </div>
                             <Image
-                                src="/mobile-phone.png"
+                                src="/double-mobile-phone.png"
                                 alt="Mobile App"
-                                width={257}
+                                width={377}
                                 height={513}
                                 className={styles.phoneImage}
                             />

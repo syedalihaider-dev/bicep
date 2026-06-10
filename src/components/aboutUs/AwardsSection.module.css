@@ -15,11 +15,8 @@
 }
 
 .desc {
-    font-size: 16px;
     color: var(--accent-color);
-    opacity: 0.7;
     margin-top: 15px;
-    line-height: 1.6;
 }
 
 .marqueeContainer {
@@ -61,15 +58,35 @@
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
 }
 
+@media screen and (max-width: 1399px) {
+    .awardsSec {
+        padding: 60px 0;
+    }
+
+    .header {
+        margin-bottom: 30px;
+    }
+
+    .heading {
+        margin-top: 10px;
+    }
+
+    .desc {
+        margin-top: 0px;
+    }
+}
+
 @media screen and (max-width: 1199px) {
     .awardsSec {
-        padding: 80px 0;
+        padding: 40px 0;
     }
+
     .awardItem {
         width: 160px;
         height: 160px;
@@ -81,15 +98,13 @@
     .heading {
         letter-spacing: -1px;
     }
+
     .desc br {
         display: none;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .awardsSec {
-        padding: 60px 0;
-    }
     .awardItem {
         width: 140px;
         height: 140px;

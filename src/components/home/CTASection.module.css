@@ -165,7 +165,7 @@
     }
 
     .phoneImage {
-        max-width: 43%;
+        max-width: 50%;
     }
 
     .ripple {
@@ -183,11 +183,15 @@
         width: 200px;
         height: 200px;
     }
+
+    .phoneNumber {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width:991px) {
     .phoneImage {
-        max-width: 40%;
+        max-width: 70%;
     }
 
     .ripple {
