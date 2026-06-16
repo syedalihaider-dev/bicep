@@ -4,12 +4,11 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import CustomButton from '@/components/CustomButton';
-import styles from './HealthcareProductivity.module.css';
+import styles from './ProductivitySection.module.css';
 
-export default function HealthcareProductivity() {
+export default function ProductivitySection() {
     return (
         <section className={styles.productivitySection}>
-            {/* Absolute Background Asset Layer */}
             <div className={styles.bgWrapper}>
                 <Image
                     src="/industries/healthcare-app-development/revenue-mobile-bg.png"
@@ -23,8 +22,7 @@ export default function HealthcareProductivity() {
             <div className="container position-relative">
                 <div className="row align-items-end">
 
-                    {/* Left Column - Typography & Content */}
-                    <div className="col-lg-5 col-md-12">
+                    <div className="col-lg-5 col-md-5">
                         <motion.div
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
@@ -48,8 +46,7 @@ export default function HealthcareProductivity() {
                         </motion.div>
                     </div>
 
-                    {/* Right Column - Images Layout */}
-                    <div className="col-lg-7 col-md-12">
+                    <div className="col-lg-7 col-md-7">
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -57,7 +54,6 @@ export default function HealthcareProductivity() {
                             transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
                             className={styles.imageContainer}
                         >
-                            {/* Main Phones Graphic Asset */}
                             <Image
                                 src="/industries/healthcare-app-development/revenue-mobile-img.png"
                                 alt="Bicep Healthcare App Mockups"
@@ -68,7 +64,6 @@ export default function HealthcareProductivity() {
                             />
                         </motion.div>
                     </div>
-
                 </div>
             </div>
         </section>

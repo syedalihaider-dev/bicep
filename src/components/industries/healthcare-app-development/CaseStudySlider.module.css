@@ -1,12 +1,12 @@
 .sliderSection {
-    height: 680px;
+  height: 680px;
   background-color: #053E41;
   position: relative;
   overflow: hidden;
 }
 
 .sliderSection:hover :global(.swiper) {
-    transform: translateX(-20px);
+  transform: translateX(-20px);
 }
 
 .constantBgCircleWrapper {
@@ -25,18 +25,30 @@
   height: 100%;
   border-radius: 50%;
   border: 2px dashed rgba(255, 255, 255, 0.08);
-  background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.03) 0%, transparent 70%);
   animation: spinInfinite 45s linear infinite, pulseSubtle 4s ease-in-out infinite alternate;
 }
 
 @keyframes spinInfinite {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes pulseSubtle {
-  0% { transform: scale(0.96); opacity: 0.7; }
-  100% { transform: scale(1.03); opacity: 1; }
+  0% {
+    transform: scale(0.96);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1.03);
+    opacity: 1;
+  }
 }
 
 .swiperContainer {
@@ -45,30 +57,36 @@
 }
 
 .imageFrameWrapper {
+  width: 596px;
+  height: auto;
   position: relative;
   z-index: 3;
 }
 
+.imageFrameWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .contentBlock {
-    padding: 117px 0;
+  padding: 117px 0;
 }
 
 .slideTitle {
-  font-size: 56px;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 24px;
 }
 
 .slideDesc {
-  font-size: 16px;
   height: 80px;
   color: #d1e2e2;
   margin-bottom: 40px;
 }
 
 .statsContainer {
-  background-color: #005A5E; 
+  background-color: #005A5E;
   border-radius: 15px;
   padding: 20px;
   display: flex;
@@ -98,7 +116,6 @@
   font-size: 32px;
   font-weight: 700;
   color: #ffffff;
-  line-height: 1.2;
 }
 
 .statLabel {
@@ -141,13 +158,14 @@
 }
 
 .arrowUpRight {
-    filter: brightness(111);
-    transform: rotate(135deg);
+  filter: brightness(111);
+  transform: rotate(135deg);
 }
 
 .caseStudyLink:hover .arrowUpRight {
   filter: unset;
 }
+
 .controlsRowWrapper {
   display: flex;
   align-items: center;
@@ -226,7 +244,7 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transform: rotate(180deg) !important;
 }
 
@@ -234,32 +252,156 @@
   filter: invert(56%) sepia(87%) saturate(1633%) hue-rotate(345deg) brightness(95%) contrast(88%);
 }
 
+@media (max-width: 1600px) {
+  .sliderSection {
+    height: 600px;
+  }
+
+  .contentBlock {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 1399px) {
+  .sliderSection {
+    height: 515px;
+  }
+
+  .constantBgCircleWrapper {
+    width: 450px;
+    height: 450px;
+  }
+
+  .imageFrameWrapper {
+    width: 550px;
+  }
+
+  .contentBlock {
+    padding: 60px 0;
+  }
+
+  .slideDesc {
+    margin-bottom: 25px;
+  }
+
+  .statsContainer {
+    margin-bottom: 25px;
+    padding: 10px;
+  }
+
+  .availabilityRow {
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+
+  .controlsRowWrapper {
+    margin-top: -60px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .sliderSection {
+    height: 445px;
+  }
+
+  .constantBgCircleWrapper {
+    width: 350px;
+    height: 350px;
+  }
+
+  .imageFrameWrapper {
+    width: 450px;
+  }
+
+  .contentBlock {
+    padding: 40px 0;
+  }
+
+  .slideTitle {
+    margin-bottom: 20px;
+  }
+
+  .statNumber {
+    font-size: 25px;
+  }
+
+  .availabilityRow {
+    margin-bottom: 20px;
+  }
+
+  .caseStudyLink,
+  .availText {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 991px) {
   .sliderSection {
-    padding: 70px 0;
+    padding: 40px 0;
+    height: unset;
   }
+
+  .constantBgCircleWrapper {
+    display: none;
+  }
+
+  .imageFrameWrapper {
+    width: 400px;
+    margin: 0 auto;
+  }
+
   .contentBlock {
-    padding-left: 0;
+    padding: 25px 0 0;
     text-align: center;
   }
+
   .slideTitle {
-    font-size: 38px;
+    margin-bottom: 10px;
   }
-  .slideDesc, .statsContainer, .controlsRowWrapper {
-    margin-left: auto;
-    margin-right: auto;
+
+  .slideDesc {
+    height: unset;
+    margin-bottom: 20px;
   }
+
   .availabilityRow {
     justify-content: center;
   }
+
   .controlsRowWrapper {
+    max-width: 100%;
     justify-content: center;
-    margin-top: 40px;
-    padding-right: 0;
+    margin: 0;
   }
-  .constantBgCircleWrapper {
-    left: 50%;
-    width: 500px;
-    height: 500px;
+}
+
+@media (max-width: 767px) {
+  .imageFrameWrapper {
+    width: 350px;
+  }
+}
+
+@media (max-width: 575px) {
+  .imageFrameWrapper {
+    width: 280px;
+  }
+
+  .statsContainer {
+    flex-wrap: wrap;
+    border-radius: 8px;
+    gap: 10px 0;
+  }
+
+  .statNumber {
+    font-size: 20px;
+  }
+
+  .statBox {
+    flex: unset;
+    width: 50%;
+  }
+
+  .statBox:nth-child(2)::after {
+    display: none;
   }
 }

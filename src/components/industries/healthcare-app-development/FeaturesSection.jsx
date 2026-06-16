@@ -82,28 +82,28 @@ const FeaturesSection = () => {
                                     <h3 className={styles.statNumber}>
                                         <Counter value={90} suffix=" %" />
                                     </h3>
-                                    <p className={styles.statLabel}>Greater Working Efficiency</p>
+                                    <p className={styles.statLabel}>Work Efficiency</p>
                                 </div>
 
                                 <div className={styles.statBox}>
                                     <h3 className={styles.statNumber}>
                                         <Counter value={60} suffix=" %" />
                                     </h3>
-                                    <p className={styles.statLabel}>Reduce Operational Costs</p>
+                                    <p className={styles.statLabel}>Cost Reduction</p>
                                 </div>
 
                                 <div className={styles.statBox}>
                                     <h3 className={styles.statNumber}>
                                         <Counter value={99.9} suffix=" %" />
                                     </h3>
-                                    <p className={styles.statLabel}>Uptime Achieve</p>
+                                    <p className={styles.statLabel}>System Uptime</p>
                                 </div>
 
                                 <div className={styles.statBox}>
                                     <h3 className={styles.statNumber}>
                                         <Counter value={4.9} suffix="/5" />
                                     </h3>
-                                    <p className={styles.statLabel}>Average Client Rating</p>
+                                    <p className={styles.statLabel}>Client Rating</p>
                                 </div>
                             </motion.div>
                         </motion.div>

@@ -17,7 +17,6 @@ export default function CTASection() {
                     viewport={{ once: true, amount: 0.2 }}
                     transition={{ duration: 0.7, ease: "easeOut" }}
                 >
-                    {/* Background Image / Pattern Overlay */}
                     <div className={styles.patternOverlay}>
                         <Image
                             src="/industries/healthcare-app-development/cta-bg.png"
@@ -28,8 +27,7 @@ export default function CTASection() {
                     </div>
 
                     <div className="row">
-                        {/* Left Content Column */}
-                        <div className="col-lg-7 col-md-12 order-2 order-lg-1">
+                        <div className="col-lg-7 col-md-12">
                             <div className={styles.contentLeft}>
                                 <h2 className={styles.mainHeading}>
                                     Curious about the cost of <br /> healthcare app development?
@@ -45,8 +43,7 @@ export default function CTASection() {
                             </div>
                         </div>
 
-                        {/* Right Graphics Column */}
-                        <div className="col-lg-5 col-md-12 order-1 order-lg-2 position-relative d-flex justify-content-center justify-content-lg-end">
+                        <div className="col-lg-5 col-md-12 position-relative d-flex justify-content-center justify-content-lg-end">
                             <motion.div
                                 className={styles.imageWrapper}
                                 initial={{ opacity: 0, scale: 0.95, y: 20 }}

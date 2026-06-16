@@ -4,10 +4,8 @@
 }
 
 .sectionTitle {
-  font-size: 3rem;
   font-weight: 600;
   color: #0c2340;
-  line-height: 1.2;
 }
 
 .tabsNavContainer {
@@ -23,7 +21,6 @@
   background: transparent;
   border: none;
   padding: 10px 24px;
-  font-size: 0.95rem;
   font-weight: 600;
   color: #475569;
   border-radius: 8px;
@@ -81,7 +78,6 @@
 }
 
 .featureText {
-  font-size: 1.05rem;
   font-weight: 500;
   color: #ffffff;
   letter-spacing: -0.2px;
@@ -91,35 +87,74 @@
   display: inline-block;
 }
 
-@media (max-width: 991px) {
-  .sectionTitle {
-    font-size: 2.3rem;
+@media (max-width: 1399px) {
+  .featuresSection {
+    padding: 60px 0;
   }
+
+  .dashboardContainer {
+    min-height: 500px;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .featuresSection {
+    padding: 40px 0;
+  }
+
+  .dashboardContainer {
+    min-height: 450px;
+  }
+
+  .featuresListGrid {
+    gap: 15px 20px;
+  }
+}
+
+@media (max-width: 991px) {
   .dashboardContainer {
     padding: 40px 30px;
   }
-  .featuresListGrid {
-    grid-template-columns: 1fr;
-    gap: 16px;
-    margin-bottom: 40px;
-  }
+
   .mockupImageWrapper {
     width: 100%;
     max-width: 400px;
   }
+
+  .featuresListGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .mockupImageWrapper {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .featuresListGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mockupImageWrapper {
+    max-width: 250px;
+  }
+
+  .sectionTitle br {
+    display: none;
+  }
 }
 
 @media (max-width: 575px) {
+  .featuresListGrid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .tabsNavContainer {
-    flex-direction: column;
-    width: 100%;
-    padding: 10px;
-  }
-  .tabBtn {
-    width: 100%;
-    text-align: center;
-  }
-  .sectionTitle {
-    font-size: 1.85rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

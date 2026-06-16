@@ -7,12 +7,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import { motion, useInView, useMotionValue, useTransform, animate } from 'framer-motion';
 
-// Swiper base styles
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import styles from './CaseStudySlider.module.css';
 
-// Counter Sub-Component for scroll-triggered counting
 const Counter = ({ value, suffix }) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, amount: 0.5 });
@@ -49,7 +47,7 @@ const caseStudies = [
         id: 2,
         title: 'MedTech Solution',
         desc: 'An innovative healthcare application engineered to streamline clinic workflows and automate electronic health records (EHR). Patients can instantly synchronize wearable vitals data directly with active medical registries.',
-        image: '/industries/healthcare-app-development/doctapp.png', // Reusing asset as requested
+        image: '/industries/healthcare-app-development/doctapp.png',
         stats: [
             { label: 'Efficiency', value: '12', suffix: 'X' },
             { label: 'Uptime', value: '99', suffix: '%' },
@@ -63,7 +61,7 @@ const caseStudies = [
         id: 3,
         title: 'CareSync App',
         desc: 'A customized elder-care platform offering continuous real-time response monitoring, dynamic automated drug alerts, and direct emergency-room pipelines designed exclusively for cross-platform devices.',
-        image: '/industries/healthcare-app-development/doctapp.png', // Reusing asset as requested
+        image: '/industries/healthcare-app-development/doctapp.png',
         stats: [
             { label: 'Response', value: '8', suffix: 'X' },
             { label: 'Safety', value: '18', suffix: 'X' },
@@ -80,12 +78,10 @@ export default function CaseStudySlider() {
     const [activeIndex, setActiveIndex] = useState(0);
     const totalSlides = caseStudies.length;
 
-    // Calculate progress percent for custom line pagination
     const progressPercent = ((activeIndex + 1) / totalSlides) * 100;
 
     return (
         <section className={styles.sliderSection}>
-            {/* Absolute Constant Background Animated Circle */}
             <div className={styles.constantBgCircleWrapper}>
                 <div className={styles.spinningCircle}></div>
             </div>
@@ -96,7 +92,7 @@ export default function CaseStudySlider() {
                     effect={'fade'}
                     fadeEffect={{ crossFade: true }}
                     slidesPerView={1}
-                    loop={false} // False is optimal for accurate custom fraction tracking
+                    loop={false}
                     autoplay={{ delay: 5000, disableOnInteraction: false }}
                     onSwiper={setSwiperInstance}
                     onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
@@ -106,7 +102,6 @@ export default function CaseStudySlider() {
                         <SwiperSlide key={slide.id}>
                             <div className="row align-items-end">
 
-                                {/* Left Side: Mockups Image */}
                                 <div className="col-lg-6 col-md-12 position-relative">
                                     <div className={styles.imageFrameWrapper}>
                                         <Image
@@ -119,13 +114,11 @@ export default function CaseStudySlider() {
                                     </div>
                                 </div>
 
-                                {/* Right Side: Content & Counters */}
                                 <div className="col-lg-6 col-md-12 text-white">
                                     <div className={styles.contentBlock}>
                                         <h2 className={styles.slideTitle}>{slide.title}</h2>
                                         <p className={`${styles.slideDesc} scroll_block`}>{slide.desc}</p>
 
-                                        {/* Dashboard Metric Grid Counters */}
                                         <div className={styles.statsContainer}>
                                             {slide.stats.map((stat, idx) => (
                                                 <div key={idx} className={styles.statBox}>
@@ -137,7 +130,6 @@ export default function CaseStudySlider() {
                                             ))}
                                         </div>
 
-                                        {/* Availability Badges */}
                                         <div className={styles.availabilityRow}>
                                             <span className={styles.availText}>Available on :</span>
                                             {slide.platforms.ios && (
@@ -148,7 +140,6 @@ export default function CaseStudySlider() {
                                             )}
                                         </div>
 
-                                        {/* View Full Case Study Link */}
                                         <div className={styles.linkWrapper}>
                                             <Link href={slide.link} className={styles.caseStudyLink}>
                                                 View Full Case Study
@@ -164,7 +155,6 @@ export default function CaseStudySlider() {
                     ))}
                 </Swiper>
 
-                {/* Custom Progress Navigation Row at Bottom-Right */}
                 <div className={styles.controlsRowWrapper}>
                     <div className={styles.fractionPagination}>
                         <span className={styles.activeNum}>{activeIndex + 1}</span>

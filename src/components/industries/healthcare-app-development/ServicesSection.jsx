@@ -46,7 +46,6 @@ const servicesData = [
 ];
 
 export default function HealthcareServices() {
-    // Scroll animation variants for the container (stagger effect)
     const containerVariants = {
         hidden: {},
         visible: {
@@ -113,7 +112,7 @@ export default function HealthcareServices() {
                 </motion.div>
 
                 {/* CTA Button */}
-                <div className="row text-center mt-5">
+                <div className="row text-center">
                     <div className="col-12">
                         <div className={styles.btnGroup}>
                             <CustomButton className={styles.ctaBtn}>

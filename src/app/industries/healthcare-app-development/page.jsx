@@ -3,7 +3,7 @@ import BannerSection from "@/components/industries/healthcare-app-development/Ba
 import FeaturesSection from "@/components/industries/healthcare-app-development/FeaturesSection";
 import ServicesSection from "@/components/industries/healthcare-app-development/ServicesSection";
 import ComplianceSlider from "@/components/industries/healthcare-app-development/ComplianceSlider";
-import HealthcareProductivity from "@/components/industries/healthcare-app-development/HealthcareProductivity";
+import ProductivitySection from "@/components/industries/healthcare-app-development/ProductivitySection";
 import CaseStudySlider from "@/components/industries/healthcare-app-development/CaseStudySlider";
 import TabsFeatures from "@/components/industries/healthcare-app-development/TabsFeatures";
 import WhyChooseSolution from "@/components/industries/healthcare-app-development/WhyChooseSolution";
@@ -24,7 +24,7 @@ export default function HealthcareAppDevelopmentPage() {
             <FeaturesSection />
             <ServicesSection />
             <ComplianceSlider />
-            <HealthcareProductivity />
+            <ProductivitySection />
             <CaseStudySlider />
             <TabsFeatures />
             <WhyChooseSolution />

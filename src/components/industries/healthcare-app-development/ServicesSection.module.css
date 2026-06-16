@@ -6,15 +6,11 @@
 .sectionTitle {
     font-weight: 700;
     color: #032142;
-    /* Dark blue/navy tone from design */
     margin-bottom: 20px;
-    line-height: 1.2;
 }
 
 .sectionSubtitle {
     color: #64748b;
-    /* Muted gray for description */
-    line-height: 1.6;
     max-width: 850px;
     margin: 0 auto;
 }
@@ -31,7 +27,6 @@
     transition: border-color 0.3s ease;
 }
 
-/* Card hover par mild border highlight */
 .serviceCard:hover {
     border-color: #cbd5e1;
 }
@@ -44,7 +39,7 @@
     align-items: center;
 }
 
-.iconWrapper img{
+.iconWrapper img {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -55,7 +50,6 @@
     font-weight: 600;
     color: var(--secondary-color);
     margin-bottom: 15px;
-    line-height: 1.4;
 }
 
 .cardDescription {
@@ -64,15 +58,13 @@
 }
 
 .btnGroup {
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
 }
 
-/* Custom button overrides agar design specific orange handle karna ho */
 .ctaBtn {
     background-color: #e25c24 !important;
-    /* Image ka orange theme color */
     color: #ffffff !important;
     border: none !important;
     padding: 12px 30px !important;
@@ -87,13 +79,51 @@
     transform: scale(1.02);
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .sectionTitle {
-        font-size: 2rem;
+@media (max-width: 1399px) {
+    .servicesSection {
+        padding: 60px 0;
     }
 
     .serviceCard {
-        padding: 25px 20px;
+        padding: 30px;
+    }
+
+    .iconWrapper {
+        width: 70px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .cardTitle {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .servicesSection {
+        padding: 40px 0;
+    }
+
+    .serviceCard {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 991px) {
+    .cardTitle {
+        font-size: 20px;
+    }
+
+    .sectionSubtitle {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .serviceCard {
+        padding: 25px;
+        text-align: center;
+        align-items: center;
     }
 }

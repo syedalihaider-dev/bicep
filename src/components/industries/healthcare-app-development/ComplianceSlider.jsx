@@ -63,7 +63,7 @@ export default function ComplianceSlider() {
         <section className={styles.complianceSection}>
             <div className="container">
                 {/* Header */}
-                <div className="row justify-content-center text-center mb-5">
+                <div className="row justify-content-center text-center">
                     <div className="col-lg-10">
                         <h2 className={styles.sectionTitle}>
                             Healthcare Compliance & <br /> Security Standards

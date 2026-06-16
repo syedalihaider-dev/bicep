@@ -82,36 +82,117 @@
     object-fit: contain;
 }
 
+@media screen and (max-width: 1399px) {
+    .featuresSection {
+        padding: 60px 0;
+    }
+
+    .heading {
+        margin-bottom: 20px;
+    }
+
+    .description {
+        margin-bottom: 10px;
+    }
+
+    .description:last-of-type {
+        margin-bottom: 20px;
+    }
+
+    .statsGrid {
+        gap: 15px;
+    }
+
+    .statNumber {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    .mockupContainer {
+        max-width: 380px;
+    }
+}
+
 @media screen and (max-width: 1199px) {
     .featuresSection {
         padding: 40px 0;
     }
+
+    .statsGrid {
+        gap: 10px;
+    }
+
+    .statBox {
+        padding-right: 8px;
+    }
+
+    .statNumber {
+        margin-bottom: 0px;
+        font-size: 22px;
+    }
+
+    /* .statBox::after {
+        display: none;
+    } */
+
+    .mockupContainer {
+        max-width: 320px;
+    }
 }
 
 @media screen and (max-width: 991px) {
-    .statsGrid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px 20px;
+    .contentWrapper {
+        align-items: center;
+        text-align: center;
     }
 
-    .statBox:nth-child(2)::after,
-    .statBox:last-child::after {
-        display: none;
+    .heading {
+        width: 450px;
+    }
+
+    .statBox {
+        padding: 0;
+        width: 150px;
+    }
+
+    .imageWrapper {
+        margin-top: 25px;
+    }
+
+    .mockupContainer {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .heading {
+        margin-bottom: 10px;
+    }
+
+    .statBox {
+        width: 130px;
     }
 }
 
 @media screen and (max-width: 575px) {
+    .heading {
+        width: 100%;
+    }
+
     .statsGrid {
-        grid-template-columns: 1fr;
-        gap: 25px;
+        gap: 10px 0;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .statBox {
-        padding-right: 0;
-        text-align: center;
+        width: 150px;
     }
 
-    .statBox:not(:last-child)::after {
+    .statBox:nth-child(even)::after {
         display: none;
+    }
+
+    .mockupContainer {
+        max-width: 250px;
     }
 }

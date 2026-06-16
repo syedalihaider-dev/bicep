@@ -33,7 +33,6 @@ const featuresData = [
 ];
 
 export default function HealthcareWhyTeladoc() {
-    // Stagger sequence effect for cards appearing on scroll
     const gridContainerVariants = {
         hidden: {},
         visible: {
@@ -54,7 +53,6 @@ export default function HealthcareWhyTeladoc() {
         <section className={styles.whySection}>
             <div className="container">
 
-                {/* Header Block */}
                 <div className="row justify-content-center text-center mb-5">
                     <div className="col-lg-10 col-md-11">
                         <h2 className={styles.sectionTitle}>
@@ -66,7 +64,6 @@ export default function HealthcareWhyTeladoc() {
                     </div>
                 </div>
 
-                {/* 2x2 Grid Cards System */}
                 <motion.div
                     className="row g-4"
                     variants={gridContainerVariants}
@@ -85,13 +82,12 @@ export default function HealthcareWhyTeladoc() {
                                     borderColor: "#cbd5e1"
                                 }}
                             >
-                                {/* Fixed container matching explicit dimension slots */}
                                 <div className={styles.iconBox}>
                                     <Image
                                         src={feature.icon}
                                         alt={feature.title}
-                                        width={80}  /* Safe baseline wrapper bounding size max width */
-                                        height={68} /* Safe height alignment matching your 68px scale */
+                                        width={80}
+                                        height={68}
                                         className="img-fluid object-contain"
                                     />
                                 </div>
@@ -101,7 +97,6 @@ export default function HealthcareWhyTeladoc() {
                         </div>
                     ))}
                 </motion.div>
-
             </div>
         </section>
     );

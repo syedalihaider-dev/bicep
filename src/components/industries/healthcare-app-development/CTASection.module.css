@@ -58,82 +58,88 @@
     right: 0;
     z-index: 2;
     width: 389px;
-    height: 436px;
+    height: auto;
 }
 
 .rightImg {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: contain;
 }
 
-@media (max-width: 1199px) {
-    .mainHeading {
-        font-size: 38px;
+@media (max-width: 1399px) {
+    .ctaSection {
+        padding: 60px 0;
     }
 
     .ctaCard {
-        padding: 50px;
+        padding: 54px 0 50px 40px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .ctaSection {
+        padding: 40px 0;
     }
 
     .imageWrapper {
-        width: 330px;
-        height: 370px;
-        bottom: -50px;
+        width: 350px;
+        bottom: -71px;
+    }
+
+    .ctaCard {
+        padding: 40px 0 28px 40px;
     }
 }
 
 @media (max-width: 991px) {
-    .ctaSection {
-        padding: 50px 0;
+    .imageWrapper {
+        width: 350px;
+        position: unset;
     }
 
     .ctaCard {
-        padding: 40px 30px;
-        overflow: visible;
-        display: flex;
-        flex-direction: column;
-        min-height: auto;
-    }
-
-    .contentLeft {
+        padding: 25px;
+        border-radius: 30px;
+        overflow: hidden;
         text-align: center;
     }
 
     .mainHeading {
-        font-size: 32px;
-
-        br {
-            display: none;
-        }
+        margin-bottom: 10px;
     }
 
     .description {
-        margin: 0 auto 30px;
+        margin-bottom: 15px;
     }
 
-    .btnGroup {
-        justify-content: center;
+    .blackCtaBtn {
+        padding: 10px 20px !important;
+        font-size: 14px !important;
+        margin: 0 auto;
     }
 
     .imageWrapper {
-        position: relative;
-        bottom: 0;
-        right: 0;
-        margin-top: 40px;
-        width: 100%;
-        max-width: 340px;
-        height: auto;
+        margin-top: 25px;
+        width: 300px;
     }
 }
 
 @media (max-width: 575px) {
-    .mainHeading {
-        font-size: 26px;
+    .ctaSection {
+        padding: 15px 0;
     }
 
     .ctaCard {
-        border-radius: 20px;
-        padding: 35px 20px;
+        border-radius: 12px;
+        padding: 40px 15px;
+    }
+
+    .mainHeading br {
+        display: none;
+    }
+
+    .imageWrapper {
+        width: 280px;
     }
 }

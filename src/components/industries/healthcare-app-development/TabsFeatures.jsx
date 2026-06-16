@@ -9,7 +9,7 @@ const tabsData = [
     {
         id: 'patient',
         label: 'Patient Panel',
-        image: '/industries/healthcare-app-development/patient-panel.png', // Main size standard (450x420)
+        image: '/industries/healthcare-app-development/patient-panel.png',
         features: [
             'User registration', 'Profile management',
             'Appointment booking', 'Video consultations',
@@ -25,7 +25,7 @@ const tabsData = [
     {
         id: 'admin',
         label: 'Admin Panel',
-        image: '/industries/healthcare-app-development/patient-panel.png', // Reusing structure layout as default
+        image: '/industries/healthcare-app-development/admin-panel.png',
         features: [
             'User & role management', 'Doctor verification',
             'Analytics dashboard', 'Revenue tracking',
@@ -37,7 +37,7 @@ const tabsData = [
     {
         id: 'professional',
         label: 'Professional Panel',
-        image: '/industries/healthcare-app-development/patient-panel.png',
+        image: '/industries/healthcare-app-development/professional-panel.png',
         features: [
             'EHR digital inputs', 'Availability scheduler',
             'Digital prescription tool', 'Video calling portal',
@@ -51,7 +51,6 @@ export default function HealthcareFeatures() {
     const [activeTab, setActiveTab] = useState('patient');
     const currentData = tabsData.find(tab => tab.id === activeTab);
 
-    // Animation Variant Definitions for Smooth Tab Switching
     const tabContentVariants = {
         hidden: { opacity: 0, y: 15 },
         visible: {
@@ -70,7 +69,6 @@ export default function HealthcareFeatures() {
         <section className={styles.featuresSection}>
             <div className="container">
 
-                {/* Section Header */}
                 <div className="row justify-content-center text-center mb-4">
                     <div className="col-lg-8">
                         <h2 className={styles.sectionTitle}>
@@ -79,7 +77,6 @@ export default function HealthcareFeatures() {
                     </div>
                 </div>
 
-                {/* Dynamic Nav Tabs Row */}
                 <div className="row justify-content-center mb-5">
                     <div className="col-auto">
                         <div className={styles.tabsNavContainer}>
@@ -90,7 +87,6 @@ export default function HealthcareFeatures() {
                                     className={`${styles.tabBtn} ${activeTab === tab.id ? styles.activeTabBtn : ''}`}
                                 >
                                     {tab.label}
-                                    {/* Framer motion magical layout pill effect for active state background */}
                                     {activeTab === tab.id && (
                                         <motion.div
                                             layoutId="activeTabPill"
@@ -104,7 +100,6 @@ export default function HealthcareFeatures() {
                     </div>
                 </div>
 
-                {/* Main Features Dynamic Container Display */}
                 <div className={styles.dashboardContainer}>
                     <AnimatePresence mode="wait">
                         <motion.div
@@ -115,8 +110,6 @@ export default function HealthcareFeatures() {
                             exit="exit"
                             className="row align-items-center g-4"
                         >
-
-                            {/* Left Column: 2-Column Features Check Grid */}
                             <div className="col-lg-7 col-md-12">
                                 <div className={styles.featuresListGrid}>
                                     {currentData.features.map((feature, idx) => (
@@ -135,7 +128,6 @@ export default function HealthcareFeatures() {
                                 </div>
                             </div>
 
-                            {/* Right Column: Mobile App Showcase Graphic */}
                             <div className="col-lg-5 col-md-12 text-center text-lg-end">
                                 <div className={styles.mockupImageWrapper}>
                                     <Image
@@ -148,7 +140,6 @@ export default function HealthcareFeatures() {
                                     />
                                 </div>
                             </div>
-
                         </motion.div>
                     </AnimatePresence>
                 </div>
