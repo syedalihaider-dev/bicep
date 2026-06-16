@@ -4,6 +4,10 @@ import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 import styles from './ScrollSection.module.css';
 
 if (typeof window !== "undefined") {
@@ -97,8 +101,8 @@ const ScrollSection = () => {
     return (
         <section className={styles.scrollSection} ref={sectionRef}>
             <div className="container h-100">
-                <div className="row h-100 align-items-end">
-                    <div className="col-lg-6">
+                <div className="row h-100 align-items-center align-items-lg-end">
+                    <div className="col-12 col-lg-6 order-2 order-lg-1">
                         <div className={styles.imageWrapper}>
                             <Image
                                 src="/services/ios-app-development/ios-apple-mobile.png"
@@ -109,8 +113,9 @@ const ScrollSection = () => {
                             />
                         </div>
                     </div>
-                    <div className="col-lg-6 h-100">
-                        <div className={styles.rightContentWrapper}>
+                    <div className="col-12 col-lg-6 h-100 order-1 order-lg-2">
+                        {/* Desktop GSAP Content */}
+                        <div className={`d-none d-lg-block ${styles.rightContentWrapper}`}>
                             <div className={styles.rightContent} ref={rightContentRef}>
                                 {contentData.map((item, index) => (
                                     <div
@@ -124,6 +129,28 @@ const ScrollSection = () => {
                                     </div>
                                 ))}
                             </div>
+                        </div>
+
+                        {/* Mobile & Tablet Swiper Content */}
+                        <div className={`d-block d-lg-none ${styles.mobileSwiperWrapper}`}>
+                            <Swiper
+                                modules={[Pagination, Autoplay]}
+                                spaceBetween={30}
+                                slidesPerView={1}
+                                pagination={{ clickable: true }}
+                                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                                className={styles.mobileSwiper}
+                            >
+                                {contentData.map((item, index) => (
+                                    <SwiperSlide key={index}>
+                                        <div className={styles.mobileContentBox}>
+                                            <div className={styles.orangeLine}></div>
+                                            <h3 className={styles.title}>{item.title}</h3>
+                                            <p className={styles.description}>{item.description}</p>
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
                         </div>
                     </div>
                 </div>

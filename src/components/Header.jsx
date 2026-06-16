@@ -35,12 +35,12 @@ const Header = () => {
                             <li className={`nav-item ${styles.dropdown}`}>
                                 <Link href="#" className={styles.nav_link}>Services</Link>
                                 <div className={styles.dropdownMenu}>
-                                    <Link href="/services/mobile-app-development" className={styles.dropdownItem}>Mobile App Development</Link>
-                                    <Link href="/services/android-app-development" className={styles.dropdownItem}>Android App Development</Link>
                                     <Link href="/services/ios-app-development" className={styles.dropdownItem}>IOS App Development</Link>
+                                    {/* <Link href="/services/mobile-app-development" className={styles.dropdownItem}>Mobile App Development</Link>
+                                    <Link href="/services/android-app-development" className={styles.dropdownItem}>Android App Development</Link>
                                     <Link href="/services/nft-game-development" className={styles.dropdownItem}>NFT game Development</Link>
                                     <Link href="/services/cross-platform-app-development" className={styles.dropdownItem}>Cross Platform App Development</Link>
-                                    <Link href="/services/blockchain-game-development" className={styles.dropdownItem}>Blockchain Game Development</Link>
+                                    <Link href="/services/blockchain-game-development" className={styles.dropdownItem}>Blockchain Game Development</Link> */}
                                 </div>
                             </li>
                             <li className={`nav-item ${styles.dropdown}`}>

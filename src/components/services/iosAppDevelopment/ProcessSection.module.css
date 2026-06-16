@@ -51,10 +51,9 @@
     width: 36px;
     height: auto;
     object-fit: contain;
-    filter: invert(0); 
+    filter: invert(0);
 }
 
-/* Active State Styles */
 .activeTab .iconWrapper {
     background-color: var(--primary-color, #e85d04);
     box-shadow: 0 0 20px rgba(232, 93, 4, 0.4);
@@ -101,17 +100,92 @@
     transition: opacity 0.4s ease;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1600px) {
+    .processSection {
+        padding: 80px 0;
+    }
+
+    .subheading {
+        margin-bottom: 0px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1399px) {
     .processSection {
         padding: 60px 0;
     }
-    
-    .heading {
-        font-size: 32px;
+
+    .subheading {
+        font-size: 16px;
+    }
+
+    .tabItem {
+        padding: 15px;
     }
 
     .imageWrapper {
+        min-height: 450px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .processSection {
+        padding: 40px 0;
+    }
+
+    .subheading {
+        font-size: 14px;
+    }
+
+    .tabItem {
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .iconWrapper {
+        width: 50px;
+        height: 50px;
+    }
+
+    .tabTitle {
+        font-size: 18px;
+    }
+
+    .tabItem {
+        padding: 15px 0px;
+    }
+
+    .imageWrapper {
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .tabsContainer {
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px 25px;
+    }
+    
+    .imageWrapper {
         min-height: 350px;
-        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .tabItem {
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .tabItem {
+        width: 100%;
+    }
+
+    .imageWrapper {
+        min-height: 320px;
     }
 }
