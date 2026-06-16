@@ -5,7 +5,7 @@
 
 .imageWrapper {
     position: relative;
-    width: 100%;
+    width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@
 
 .mainImage {
     max-width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: contain;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .description {
-    font-size: 16px;
+    font-size: 18px;
     color: #6b7280;
     margin-bottom: 40px;
 }
@@ -54,17 +54,86 @@
     box-shadow: 0 8px 25px rgba(231, 107, 43, 0.3);
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1600px) {
+    .focusSection {
+        padding: 80px 0;
+    }
+
+    .contentWrapper {
+        max-width: 100%;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1399px) {
     .focusSection {
         padding: 60px 0;
     }
-    
-    .contentWrapper {
-        margin-left: 0;
-        margin-top: 40px;
+
+    .imageWrapper {
+        width: 500px;
     }
-    
+
+    .subHeading {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
     .heading {
-        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .description {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .focusSection {
+        padding: 40px 0;
+    }
+
+    .imageWrapper {
+        width: 450px;
+    }
+
+    .heading {
+        margin-bottom: 15px;
+    }
+
+    .description {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .imageWrapper {
+        width: 350px;
+    }
+
+    .heading {
+        margin-bottom: 15px;
+    }
+
+    .description {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .imageWrapper {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .subHeading {
+        justify-content: center;
+    }
+
+    .focusSection {
+        text-align: center;
     }
 }

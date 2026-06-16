@@ -8,18 +8,18 @@ const FocusSection = () => {
         <section className={styles.focusSection}>
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-lg-6 mb-5 mb-lg-0">
+                    <div className="col-md-6 col-lg-6 mb-5 mb-lg-0">
                         <div className={styles.imageWrapper}>
-                            <Image 
-                                src="/services/ios-app-development/mobile-window.png" 
-                                alt="iOS App Development Process" 
-                                width={600} 
-                                height={700} 
+                            <Image
+                                src="/services/ios-app-development/mobile-window.png"
+                                alt="iOS App Development Process"
+                                width={600}
+                                height={700}
                                 className={styles.mainImage}
                             />
                         </div>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-md-6 col-lg-6">
                         <div className={styles.contentWrapper}>
                             <div className={styles.subHeading}>
                                 <span className={styles.dot}></span>

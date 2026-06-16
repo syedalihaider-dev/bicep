@@ -132,14 +132,6 @@
 }
 
 @media screen and (max-width: 991px) {
-    .technologiesSection {
-        padding: 60px 0;
-    }
-
-    .heading {
-        font-size: 32px;
-    }
-
     .techImage {
         height: 120px;
     }
